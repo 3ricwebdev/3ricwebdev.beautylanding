@@ -1,0 +1,80 @@
+
+.header
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 24px 0
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    .btn
+        @media screen and (max-width: 1300px)
+            display: none
+
+.home-page
+    color: rgb(255, 255, 255)
+    font-size: 40px
+    font-family: 'Bricolage Grotesque'
+    font-weight: semibold
+    transition: 0.3s
+    &:hover
+        color: rgb(230, 230, 230)
+    &:active
+        color: rgb(214, 212, 212)
+.header__nav
+    display: flex
+    width: 30%
+    justify-content: space-between
+    align-items: center
+    font-family: 'Onest', sans-serif
+    color: rgb(255, 255, 255)
+    font-size: 20px
+    font-weight: 400
+    line-height: 150%
+    letter-spacing: 0
+    li
+        &:hover
+            text-decoration: underline
+    .header__nav_item-contact
+        display: none
+        @media screen and (max-width: 1300px)
+            display: inline-block
+    @media screen and (max-width: 1300px)
+        gap: 20px
+        width: 50%
+        transform: translateY(5px)
+.contact
+    color: white
+    font-size: 22px
+    font-family: 'Bricolage Grotesque'
+    font-weight: bold
+    padding: 12px 40px
+    box-sizing: border-box
+
+.header a, .header .btn
+    width: 205px
+
+// footer
+
+.footer
+    background-color: rgb(227, 227, 219)
+    .container
+        padding: 60px 0
+        justify-content: space-between
+        align-items: center
+    .home-page
+        color: rgb(107, 114, 107)
+        &:hover
+            color: rgb(32, 34, 32, 0.75)
+        &:active
+            color: rgb(32, 34, 32, 1)
+
+    .copyright
+        color: rgb(91, 97, 91)
+        font-family: Onest
+        font-size: 20px
+        font-weight: 400
+        letter-spacing: 0
+        cursor: pointer
